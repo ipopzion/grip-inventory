@@ -1,0 +1,94 @@
+body {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsible {
+    background-color: #eee;
+    opacity: 80%;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    max-width: 540px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+.rbutton {
+    background-color: rgb(144, 153, 161);
+    opacity: 100%;
+}
+
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    width: 100%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    flex: 1 1 auto;
+}
+
+.active {
+    opacity: 100%;
+}
+
+.question, h4 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.scoreboard {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 40px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p, h4 {
+    padding: 0 20px;
+    flex: 1 1 auto;
+}
+
+p {
+    margin: 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: 'Helvetica', sans-serif;
+}
