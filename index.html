@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spiritual GRIP</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <title>GRIP 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="churchlogo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <script src="script.js" defer></script>
-    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-radar.min.js"></script>
 </head>
+
 <body>
-    <h1>Spiritual GRIP</h1>
-    <div class="container" id="qfield"></div>
+    <ul id="navbar">
+        <li class="navbutton active" link-index="0">Intro</li>
+        <li class="navbutton" link-index="1">Quiz</li>
+        <li class="navbutton" link-index="2">Eval</li>
+        <li class="navbutton" link-index="3">Plan</li>
+    </ul>
+    <div id="pageContainer">
+        <div class="page" data-index="0" id="introduction"></div>
+        <div class="page" data-index="1" id="questionaire"></div>
+        <div class="page" data-index="2" id="evaluation"></div>
+        <div class="page" data-index="3" id="plan"></div>
+    </div>
+    <div id="loadingScreen">
+        <p>Loading</p>
+        <div id="downloadBar">
+            <div id="progressBar"></div>
+        </div>
+    </div>
 </body>
+
 </html>
